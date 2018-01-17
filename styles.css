@@ -9,6 +9,25 @@ body{
 body, a:link, a:visited, a:active{
   color: lightblue;
 }
+
+.tinted-image {
+
+ max-width: 100%;
+ height: auto;
+ width: auto;
+background: url("#");
+}
+
+.red:after {
+  content: '';
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  top: 0;
+  left: 0;
+  background: rgba(255, 0, 0, 0.5);
+}
+
 .title, .addDancerButton{
   padding:5px 12px;
   float:right;
@@ -21,7 +40,22 @@ body, a:link, a:visited, a:active{
   background-color: #777;
 }
 .dancer{
-  border:10px solid red;
+  border:10px solid pink;
   border-radius:10px;
   position:absolute;
+}
+
+.jellyFish{
+  border:10px solid pink;
+  border-radius:10px
+  position:absolute;
+  -webkit-animation: cssAnimation 3s 20 ease;
+-moz-animation: cssAnimation 2s 6 ease;
+-o-animation: cssAnimation 1s 6 ease;
+}
+@-webkit-keyframes cssAnimation {
+from { -webkit-transform: rotate(0deg); }
+to { -webkit-transform: rotate(360deg); }
+}
+
 }

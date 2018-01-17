@@ -1,0 +1,18 @@
+.tinted-image {
+  
+  width: 300px;
+  height: 200px;
+  
+  background: 
+    url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/owl1.jpg);
+}
+
+.red:after {
+  content: '';
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  top: 0;
+  left: 0;
+  background: rgba(255, 0, 0, 0.5);
+}
