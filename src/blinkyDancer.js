@@ -4,7 +4,6 @@ var blinkyDancer = function(top, left, timeBetweenSteps) {
 
 blinkyDancer.prototype = Object.create(Dancer.prototype);
 blinkyDancer.prototype.constructor = blinkyDancer;
-
 blinkyDancer.prototype.step = function() {
   Dancer.prototype.step.call(this);
   this.$node.toggle();
